@@ -18,6 +18,11 @@ const Body = styled.div`
     }
 `;
 
+const Content = styled.div`
+    width: 100%;
+    height: 100%;
+`;
+
 class Card extends PureComponent {
     state = {
         alt: true
@@ -32,7 +37,9 @@ class Card extends PureComponent {
     render() {
         return (
             <Body onClick={this.handleCardClick}>
-            {this.state.alt ? <Front/> : <Back/>}
+                <Content>
+                    {this.state.alt ? <Front/> : <Back/>}
+                </Content>
             </Body>
         );
     }
