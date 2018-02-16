@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
+
+import Card from './Card';
 
 const Body = styled.div`
     width: 100vw;
@@ -7,20 +9,14 @@ const Body = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #D7D7D7;
 `;
 
-const Container = styled.div`
-    background: azure;
-    width: 100px;
-    height: 100px;
-`;
-
-class App extends Component {
+class App extends PureComponent {
     render() {
         return (
             <Body>
-                <Container>
-                </Container>
+                <Card />
             </Body>
         );
     }
