@@ -6,6 +6,17 @@ const Body = styled.div`
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(50, 50, 50, .5);
+        border-radius: 10px;
+    }
 `;
 
 const Text = styled.p`
