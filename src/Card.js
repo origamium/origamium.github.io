@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+import Front from './Front';
+import Back from './Back';
+
 const Body = styled.div`
     width: 459px;
     height: 277px;
@@ -8,21 +11,35 @@ const Body = styled.div`
     border-radius: 2px;
     padding: 6px;
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
+    transition: all 0.2s ease-out 0s;
+    
+    &:hover {
+        filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.6));
+    }
 `;
 
-const Name = styled.p`
-    font-family: 'Lato', sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-    letter-spacing: 4px;
-    color: grey;
+const Content = styled.div`
+    width: 100%;
+    height: 100%;
 `;
 
 class Card extends PureComponent {
+    state = {
+        alt: true
+    };
+
+    handleCardClick = () => {
+        this.setState({
+            alt: !this.state.alt
+        })
+    };
+
     render() {
         return (
-            <Body>
-                <Name>ONOUE<br/>Origami</Name>
+            <Body onClick={this.handleCardClick}>
+                <Content>
+                    {this.state.alt ? <Front/> : <Back/>}
+                </Content>
             </Body>
         );
     }
