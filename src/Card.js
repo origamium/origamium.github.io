@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
+import Front from './Front';
+
 const Body = styled.div`
     width: 459px;
     height: 277px;
@@ -14,20 +16,11 @@ const Body = styled.div`
     }
 `;
 
-const Name = styled.p`
-    font-family: 'Lato', sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-    user-select: none;
-    letter-spacing: 4px;
-    color: grey;
-`;
-
 class Card extends PureComponent {
     render() {
         return (
             <Body>
-                <Name>ONOUE<br/>Origami</Name>
+                <Front/>
             </Body>
         );
     }
