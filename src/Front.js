@@ -4,14 +4,14 @@ import styled from 'styled-components';
 const Name = styled.p`
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 24px;
     user-select: none;
     letter-spacing: 4px;
     color: grey;
 `;
 
 const Front = (props) => (
-    <Name>ONOUE<br />Origami</Name>
+    <Name>ORIGAMI<br />ONOUE</Name>
 );
 
 export default Front;
