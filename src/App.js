@@ -92,7 +92,7 @@ class App extends Component {
     listRenderer = (list) => (
         <List>
             {list.map((v, i) => (
-                <li key={i} onClick={this.openInNewTab('https://' + v.url)}>{v.name}</li>
+                <li key={i} onClick={this.openInNewTab(v.url)}>{v.name}</li>
             ))}
         </List>
     );
@@ -102,53 +102,53 @@ class App extends Component {
         this.state = {
             work: [
                 {
-                    url: 'github.com/origamium',
+                    url: 'https://github.com/origamium',
                     name: 'github.com',
                 },
                 {
-                    url: 'github.com/tsuruclient',
+                    url: 'https://github.com/tsuruclient',
                     name: 'Tsuruclient',
                 }
             ],
             social: [
                 {
-                    url: 'twitter.com/arclisp',
+                    url: 'https://twitter.com/arclisp',
                     name: 'Twitter'
                 },
                 {
-                    url: 'mstdn.jp/@lisp',
+                    url: 'https://mstdn.jp/@lisp',
                     name: 'mstdn.jp'
                 },
                 {
-                    url: 'pawoo.net/@origami',
+                    url: 'https://pawoo.net/@origami',
                     name: 'pawoo.net'
                 },
                 {
-                    url: 'freezepeach.xyz/origami',
+                    url: 'https://freezepeach.xyz/origami',
                     name: 'freezepeach.xyz'
                 },
             ],
             blog: [
                 {
-                    url: 'dev.to/origamium',
+                    url: 'https://dev.to/origamium',
                     name: 'dev.to tech blog',
                 },
                 {
-                    url: 'medium.com/@schemelisp',
+                    url: 'https://medium.com/@schemelisp',
                     name: 'medium.com tech poem'
                 },
                 {
-                    url: 'note.mu/garbageable',
+                    url: 'https://note.mu/garbageable',
                     name: 'Cook, Poem'
                 },
             ],
             help: [
                 {
-                    url: 'www.pixiv.net/fanbox/creator/31344513',
+                    url: 'https://www.pixiv.net/fanbox/creator/31344513',
                     name: 'pixiv fanbox',
                 },
                 {
-                    url: 'amzn.asia/6TwgTYR',
+                    url: 'http://amzn.asia/6TjSltw',
                     name: 'amazon wishlist',
                 }
             ]
