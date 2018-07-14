@@ -56,13 +56,14 @@ const Box = `
     margin: 4px;
     padding: 10px;
     text-align: center;
+    background-color: whitesmoke;
     border: solid 1px gray;
     user-select: none;
     transition: 0.3s;
     
     :hover {
-        background-color: lightgray;
-        box-shadow: 2px 5px gray;
+        background-color: white;
+        box-shadow: 8px 4px lightgray;
     }
 `;
 
