@@ -4,6 +4,7 @@ import icon from './icon.png';
 
 const Root = styled.main`
     padding: 24px;
+    font-weight: bolder;
 `;
 
 const Header = styled.header`
@@ -69,7 +70,7 @@ const Box = `
 
 const List = styled.ul`
     width: 100%;
-    max-width: 320px;
+    max-width: 240px;
     margin: 20px;
     margin-top: 10px;
     list-style: none;
@@ -83,12 +84,20 @@ const List = styled.ul`
     }
 `;
 
-
+const Description = styled.p`
+    padding-left: 2em;
+    letter-spacing: 2em !important;
+    
+    & span {
+        color: darkred;
+    }
+`;
 
 class App extends Component {
     openInNewTab = url => e => {
         window.open(url, '_blank').focus();
     };
+
     listRenderer = (list) => (
         <List>
             {list.map((v, i) => (
@@ -103,7 +112,7 @@ class App extends Component {
             work: [
                 {
                     url: 'https://github.com/origamium',
-                    name: 'github.com',
+                    name: 'GitHub',
                 },
                 {
                     url: 'https://github.com/tsuruclient',
@@ -115,7 +124,7 @@ class App extends Component {
                     url: 'https://twitter.com/arclisp',
                     name: 'Twitter'
                 },
-                {
+                /* {
                     url: 'https://mstdn.jp/@lisp',
                     name: 'mstdn.jp'
                 },
@@ -126,20 +135,20 @@ class App extends Component {
                 {
                     url: 'https://freezepeach.xyz/origami',
                     name: 'freezepeach.xyz'
-                },
+                }, */
             ],
             blog: [
                 {
                     url: 'https://dev.to/origamium',
-                    name: 'dev.to tech blog',
+                    name: 'Tech Blog',
                 },
                 {
                     url: 'https://medium.com/@schemelisp',
-                    name: 'medium.com tech poem'
+                    name: 'Tech Poem'
                 },
                 {
                     url: 'https://note.mu/garbageable',
-                    name: 'Cook, Poem'
+                    name: 'Cooking and Poem'
                 },
             ],
             help: [
@@ -162,19 +171,18 @@ class App extends Component {
                     <img src={icon} alt={"ONOUE Origami's icon"}/>
                     <h1>{"ONOUE Origami"}</h1>
                     <h2>尾上 折紙</h2>
-                    <p>
-                        {"Frontend(React, Redux) Programmer, Computer Science, 3D modeling, illustration, and Cooking."}
-                    </p>
+                    <Description>
+                        {"UN"}<span>{"DEAD"}</span>
+                    </Description>
                 </Header>
                 <hr/>
                 <Body>
-                <React.Fragment>
                     <p>Contact</p>
                     <List>
                         <li style={{userSelect: 'text'}}>onoueorigami@gmail.com</li>
                     </List>
 
-                    <p>Working in</p>
+                    <p>Working</p>
                     {this.listRenderer(this.state.work)}
 
                     <p>Social</p>
@@ -185,7 +193,6 @@ class App extends Component {
 
                     <p>Donate</p>
                     {this.listRenderer(this.state.help)}
-                </React.Fragment>
                 </Body>
             </Root>
         );
