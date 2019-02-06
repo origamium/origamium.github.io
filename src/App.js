@@ -71,8 +71,7 @@ const Box = `
 const List = styled.ul`
     width: 100%;
     max-width: 240px;
-    margin: 20px;
-    margin-top: 10px;
+    margin: 10px 20px 20px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -172,7 +171,7 @@ class App extends Component {
                     <h1>{"ONOUE Origami"}</h1>
                     <h2>尾上 折紙</h2>
                     <Description>
-                        {"UN"}<span>{"DEAD"}</span>
+                        <span>{"451"}</span>
                     </Description>
                 </Header>
                 <hr/>
