@@ -21,7 +21,8 @@ const Styled = {
             padding: 0;
         }
         img {
-            width: 17vw;
+            width: 14vw;
+            max-width: 8em;
         }
     `,
     Article: styled.article`
@@ -36,7 +37,9 @@ const Styled = {
             padding: 0.3em 0;
             text-decoration: none;
             width: 220px;
+            background-color: #f4f4f4;
             border: solid 1px gray;
+            border-radius: 2px;
         }
     `,
 }
@@ -58,7 +61,7 @@ export default () => {
             <Styled.Article>
                 <section>
                     <h2>{"Email"}</h2>
-                    <p>
+                    <p style={{cursor: "text"}}>
                         {"onoueorigami@gmail.com"}
                     </p>
                 </section>
@@ -66,7 +69,7 @@ export default () => {
                     <section key={i}>
                         <h2>{v}</h2>
                         {data[v].map((v, j) => (
-                            <p key={i.toString()+j} onClick={open(v.url)}>
+                            <p key={i.toString()+j} onClick={open(v.url)} style={{cursor: "pointer"}}>
                                 {v.name}
                             </p>
                         ))}
