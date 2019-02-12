@@ -1,1 +1,0 @@
-Welcome to Al-Qaeda!
