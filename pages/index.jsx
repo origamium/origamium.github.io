@@ -53,7 +53,7 @@ export default () => {
     return (
         <Styled.Main>
             <Styled.Header>
-                <img src={"../static/icon.png"} alt={"origamium icon"} onClick={open('https://451.origamium.net')} />
+                <img src={"../static/icon@0,75x.jpg"} alt={"origamium icon"} onClick={open('https://451.origamium.net')} />
                 <h1>{"尾上 折紙"}</h1>
                 <h2>{"ONOUE Origami"}</h2>
             </Styled.Header>
