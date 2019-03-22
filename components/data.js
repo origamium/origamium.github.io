@@ -16,7 +16,7 @@ export default {
         },
         {
             "url": "https://www.npmjs.com/package/lets-get-arrested",
-            "name": "lets-get-arrested"
+            "name": "lets-get-arrested npm package"
         }
     ],
     "social": [
