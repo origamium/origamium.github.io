@@ -11,12 +11,12 @@ export default {
     ],
     "playground": [
         {
-            "url": "https://musubimeyui.origamium.net",
-            "name": "結目ユイ Heartbeat"
-        },
-        {
             "url": "https://451.origamium.net",
             "name": "451 Unavailable"
+        },
+        {
+            "url": "https://www.npmjs.com/package/lets-get-arrested",
+            "name": "lets-get-arrested"
         }
     ],
     "social": [
