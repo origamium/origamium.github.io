@@ -9,20 +9,14 @@ export default {
             "name": "Tsuruclient"
         }
     ],
-    "playground": [
-        {
-            "url": "https://451.origamium.net",
-            "name": "451 Unavailable"
-        },
-        {
-            "url": "https://www.npmjs.com/package/lets-get-arrested",
-            "name": "lets-get-arrested npm package"
-        }
-    ],
     "social": [
         {
             "url": "https://twitter.com/arclisp",
             "name": "Twitter"
+        },
+        {
+            "url": "https://www.youtube.com/channel/UCSPtOmVExqLgb921sEU-8Pg/featured",
+            "name": "Youtube Channel"
         },
         {
             "url": "https://www.instagram.com/schemelisp",
